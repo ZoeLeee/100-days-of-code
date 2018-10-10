@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+      <label for="">查询城市</label> 
+      <input type="text" id="city">
+  </div>
+  <div>
+    <label for="">当前城市：</label>
+    <span id="currentCity"></span>
+  </div>
+  <script src="util.js"></script>
+  <script>
+    let url="https://api.map.baidu.com/api?v=2.0&ak=KSXijlWCvNZIWlOVpZfj9hmsVNQpL1kE&s=1&callback=getCity";
+    jsonP(url);
+  </script>
+</body>
+
+</html>
